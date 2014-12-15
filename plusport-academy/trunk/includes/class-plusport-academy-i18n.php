@@ -6,11 +6,11 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       http://example.com
+ * @link       http://www.plusport.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    PlusPort_Academy
+ * @subpackage PlusPort_Academy/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    PlusPort_Academy
+ * @subpackage PlusPort_Academy/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_i18n {
+class PlusPort_Academy_i18n {
 
 	/**
 	 * The domain specified for this plugin.

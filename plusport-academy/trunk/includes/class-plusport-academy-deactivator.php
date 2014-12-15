@@ -3,11 +3,11 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       http://example.com
+ * @link       http://www.plusport.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    PlusPort_Academy
+ * @subpackage PlusPort_Academy/includes
  */
 
 /**
@@ -16,16 +16,16 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    PlusPort_Academy
+ * @subpackage PlusPort_Academy/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Deactivator {
+class PlusPort_Academy_Deactivator {
 
 	/**
-	 * Short Description. (use period)
+	 * Main configuration for PlusPort's widgets. (use period)
 	 *
-	 * Long Description.
+	 * All PlusPort's widgets general configuration can be made with this plugin.
 	 *
 	 * @since    1.0.0
 	 */
