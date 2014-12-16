@@ -18,16 +18,16 @@ function print_options_page()
 
 	if (isset($_POST['plusport-academy-settings']) && check_admin_referer('plusport-academy-settings'))
 	{
-		update_option('academy_username', $_POST['academy_username'], true);
-		update_option('academy_password', $_POST['academy_password'], true);
-		update_option('academy_portal_guid', $_POST['academy_portal_guid'], true);
-		update_option('academy_portal_id', $_POST['academy_portal_id'], true);
-		update_option('academy_environment', $_POST['academy_environment'], true);
+		update_option('pp_academy_username', $_POST['pp_academy_username'], true);
+		update_option('pp_academy_password', $_POST['pp_academy_password'], true);
+		update_option('pp_academy_portal_guid', $_POST['pp_academy_portal_guid'], true);
+		update_option('pp_academy_portal_id', $_POST['pp_academy_portal_id'], true);
+		update_option('pp_academy_environment', $_POST['pp_academy_environment'], true);
 		$notice_update = true;
 	}
 
 	if ($notice_update == true) {
-		echo '<div id="message" class="updated fade"><p><strong>'.__('Settings saved.','plusport-academy').'</strong></p></div>';
+		echo '<div id="message" class="updated fade"><p><strong>'.__('Settings saved.','plusport-academy-settings').'</strong></p></div>';
 	}
 ?>
 	<div class="wrap" id="plusport-academy-settings">
@@ -42,18 +42,18 @@ function print_options_page()
 								<table class="form-table">
 									<tr valign="top">
 										<th scope="row" class="th-full">
-											<label for="academy_username"><?php _e('Username','plusport-academy'); ?></label>
+											<label for="pp_academy_username"><?php _e('Username','plusport-academy-settings'); ?></label>
 										</th>
 										<td>
-											<input name="academy_username" type="text" id="academy_username" value="<?php echo esc_attr(get_option('academy_username')); ?>" class="regular-text code" />
+											<input name="pp_academy_username" type="text" id="pp_academy_username" value="<?php echo esc_attr(get_option('pp_academy_username')); ?>" class="regular-text code" />
 										</td>
 									</tr>
 									<tr valign="top">
 										<th scope="row" class="th-full">
-											<label for="academy_password"><?php _e('Password','plusport-academy'); ?></label>
+											<label for="pp_academy_password"><?php _e('Password','plusport-academy-settings'); ?></label>
 										</th>
 										<td>
-											<input name="academy_password" type="password" id="academy_password" value="<?php echo esc_attr(get_option('academy_password')); ?>" class="regular-text code" />
+											<input name="pp_academy_password" type="password" id="pp_academy_password" value="<?php echo esc_attr(get_option('pp_academy_password')); ?>" class="regular-text code" />
 										</td>
 									</tr>
 								</table>
@@ -65,18 +65,18 @@ function print_options_page()
 								<table class="form-table">
 									<tr valign="top">
 										<th scope="row" class="th-full">
-											<label for="academy_portal_guid"><?php _e('Portal GUID','plusport-academy'); ?></label>
+											<label for="pp_academy_portal_guid"><?php _e('Portal GUID','plusport-academy-settings'); ?></label>
 										</th>
 										<td>
-											<input name="academy_portal_guid" type="text" id="academy_portal_guid" value="<?php echo esc_attr(get_option('academy_portal_guid')); ?>" class="regular-text code" />
+											<input name="pp_academy_portal_guid" type="text" id="pp_academy_portal_guid" value="<?php echo esc_attr(get_option('pp_academy_portal_guid')); ?>" class="regular-text code" />
 										</td>
 									</tr>
 									<tr valign="top">
 										<th scope="row" class="th-full">
-											<label for="academy_portal_id"><?php _e('Portal ID','plusport-academy'); ?></label>
+											<label for="pp_academy_portal_id"><?php _e('Portal ID','plusport-academy-settings'); ?></label>
 										</th>
 										<td>
-											<input name="academy_portal_id" type="text" id="academy_portal_id" value="<?php echo esc_attr(get_option('academy_portal_id')); ?>" class="regular-text code" />
+											<input name="pp_academy_portal_id" type="text" id="pp_academy_portal_id" value="<?php echo esc_attr(get_option('pp_academy_portal_id')); ?>" class="regular-text code" />
 										</td>
 									</tr>
 								</table>
@@ -88,13 +88,13 @@ function print_options_page()
 								<table class="form-table">
 									<tr valign="top">
 										<th scope="row" class="th-full">
-											<label for="academy_portal_guid"><?php _e('Omgeving','plusport-academy'); ?></label>
+											<label for="pp_academy_portal_guid"><?php _e('Omgeving','plusport-academy-settings'); ?></label>
 										</th>
 										<td>
-											<select name="academy_environment" id="academy_environment" class="regular-text code">
-												<option <?php if(esc_attr(get_option('academy_environment')) == 'live'){ echo "selected"; } ?> value="live">Live</option>
-												<option <?php if(esc_attr(get_option('academy_environment')) == 'staging'){ echo "selected"; } ?> value="staging">Staging</option>
-												<option <?php if(esc_attr(get_option('academy_environment')) == 'test'){ echo "selected"; } ?> value="test">Test</option>
+											<select name="pp_academy_environment" id="pp_academy_environment" class="regular-text code">
+												<option <?php if(esc_attr(get_option('pp_academy_environment')) == 'live'){ echo "selected"; } ?> value="live">Live</option>
+												<option <?php if(esc_attr(get_option('pp_academy_environment')) == 'staging'){ echo "selected"; } ?> value="staging">Staging</option>
+												<option <?php if(esc_attr(get_option('pp_academy_environment')) == 'test'){ echo "selected"; } ?> value="test">Test</option>
 											</select>
 										</td>
 									</tr>
@@ -103,7 +103,7 @@ function print_options_page()
 						</div>
 						<div id="validation">
 							<?php wp_nonce_field('plusport-academy-settings');?>
-							<input type="submit" value="<?php _e('Update','plusport-academy');?>" class="button-primary button" name="plusport-academy-settings"/>
+							<input type="submit" value="<?php _e('Update','plusport-academy-settings');?>" class="button-primary button" name="plusport-academy-settings"/>
 						</div>
 					</form>
 				</div>
