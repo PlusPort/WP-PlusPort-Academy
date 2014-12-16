@@ -14,13 +14,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       PlusPort Academy
- * Plugin URI:        http://www.plusport.com/plusport-academy/
+ * Plugin URI:        https://github.com/PlusPort/WP-PlusPort-Academy
  * Description:       This plugin is required for the PlusPort Academy Widgets. General settings are made in this plugin
  * Version:           1.0.0
  * Author:            PlusPort B.V.
  * Author URI:        http://www.plusport.com/
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       plusport-academy
  * Domain Path:       /languages
  */
