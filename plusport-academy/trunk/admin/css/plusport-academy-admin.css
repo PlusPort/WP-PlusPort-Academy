@@ -2,3 +2,25 @@
  * All of the CSS for your dashboard-specific functionality should be
  * included in this file.
  */
+#plusport-academy-settings #namediv
+{
+	width: 32%;
+	float: left;
+	margin-right: 1%;
+	min-height: 200px;
+}
+
+#plusport-academy-settings #validation
+{
+	width: 100%;
+	clear: both;
+}
+
+@media screen and (max-width: 782px)
+{
+	#plusport-academy-settings #namediv
+	{
+		width: 100%;
+		float: left;
+	}
+}

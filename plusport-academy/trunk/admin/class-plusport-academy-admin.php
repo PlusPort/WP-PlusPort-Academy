@@ -100,4 +100,20 @@ class PlusPort_Academy_Admin {
 
 	}
 
+	/**
+	 * Register the PlusPort Academy Settings page in the Dashboard.
+	 *
+	 * This menu will be available under the general Settings menu.
+	 *
+	 * @since    1.0.0
+	 */
+	public function add_options_submenu() {
+
+		/**
+		 * This function is provided for demonstration purposes only.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/partials/plusport-academy-admin-display.php';
+		add_options_page('PlusPort Academy', 'PlusPort Academy', 'manage_options', 'pp_academy_options', 'print_options_page');
+	}
+
 }
